@@ -1,14 +1,16 @@
 import React from 'react';
-import { AuthRoute, ProtectedRoute } from '../util/route_util';
+// import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import { Route, Switch } from 'react-router-dom';
 
 const App = () => (
     <div>
-        {/* <h1>Hello World</h1> */}
-        <Modal />
-        <NavBar />
-        <Switch>
+        <h1>Protect Our Elders</h1>
+        {/* <Modal /> */}
+        {/* <NavBar /> */}
+        {/* <Switch> */}
             {/* <Route exact path="/" component={Splash} /> */}
-        </Switch>
+        {/* </Switch> */}
     </div>
 );
+
+export default App;
