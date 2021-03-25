@@ -1,22 +1,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-// import App from './App';
-// import axios from 'axios';
-
-// ReactDOM.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>,
-//   document.getElementById('root')
-// );
-
-// window.axios = axios;
-
+import jwt_decode from 'jwt-decode';
+import Root from './components/root';
+import configureStore from './store/store';
+// import { setAuthToken } from './util/session_api_util';
+// import { logout } from './actions/session_actions';
+// import './scss/application.scss';
 
 document.addEventListener('DOMContentLoaded', () => {
-// Render our root component and pass in the store as a prop
-const root = document.getElementById('root');
-
-ReactDOM.render(<Root store={store} />, root);
+  let store;
+  // Check if there is a session token already stored.
+  // if (localStorage.jwtToken) {
+  //   // Add token to header for all future requests.
+  //   setAuthToken(localStorage.jwtToken);
+  //   // Get user info by decoding the token.
+  //   const decodedUser = jwt_decode(localStorage.jwtToken);
+  //   const preloadedState = { session: { isAuthenticated: true, user: decodedUser } };
+  //   store = configureStore(preloadedState);
+  //   const currentTime = Date.now() / 1000;
+  //   if (decodedUser.exp < currentTime) {
+  //     // If the token has expired,
+  //     // Logout the user and redirect to the login page
+  //     store.dispatch(logout());
+  //     window.location.href = '/login';
+  //   }
+  // } else {
+  //   // If this is a first time user, start with an empty store.
+    store = configureStore({});
+  // }
+  const root = document.getElementById('root');
+  ReactDOM.render(<Root store={store} />, root);
 });
