@@ -40,7 +40,7 @@ const VolunteerSchema = new Schema({
     tagalog: {type: Boolean, required: true, default: false},
     vietnamese: {type: Boolean, required: true, default: false},
     spanish: {type: Boolean, required: true, default: false},
-    other: {type: String, required: true},
+    other: {type: String, required: true, default: ""},
   },
   previousTraining: {
     yes: {type: Boolean, required: true, default: false},
