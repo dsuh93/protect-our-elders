@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import jwt_decode from 'jwt-decode';
 import Root from './components/root';
 import configureStore from './store/store';
+import './scss/index.scss'
 // import { setAuthToken } from './util/session_api_util';
 // import { logout } from './actions/session_actions';
 // import './scss/application.scss';
