@@ -1,2 +1,4 @@
+keys_prod.js
+.env
 /node_modules
 keys_dev.js
