@@ -25,14 +25,38 @@ class Navbar extends React.Component {
     render(){
         debugger
         return(
-            <div id="navbar-main" class={`${this.navBorder()}`}>
-                <Link to="/" class={`nav-link ${this.underline('/')}`}>Home</Link>
-                <Link to="/about" class={`nav-link ${this.underline('/about')}`}>About Us</Link>
-                <span class="nav-link">Get Involved <i class="fas fa-caret-down"></i></span>
-                <span class="nav-link">Donations <i class="fas fa-caret-down"></i></span>
-                <Link to="/media" class={`nav-link ${this.underline('/media')}`}>Media</Link>
-                <Link to="/contact" class={`nav-link ${this.underline('/contact')}`}>Contact Us</Link>
-                <span class="nav-link">More <i class="fas fa-caret-down"></i></span>
+            <div id="navbar-main" className={`${this.navBorder()}`}>
+                <Link to="/" className={`nav-link ${this.underline('/')}`}>Home</Link>
+                <Link to="/about" className={`nav-link ${this.underline('/about')}`}>About Us</Link>
+                <span>
+                    <span className={`nav-link ${this.underline('/feedback')} ${this.underline('/protection')} ${this.underline('/volunteers')}`}>Get Involved <i className="fas fa-caret-down"></i></span>
+                <span className="nav-dropdown">
+                    <ul>
+                        <li><Link to="/volunteers" >Volunteers</Link></li>
+                        <li><Link to="/protection" >Protection in Your City</Link></li>
+                        <li><Link to="/feedback" >Feedback</Link></li>
+                    </ul>
+                </span>
+                </span>
+                <span>
+                    <span className={`nav-link ${this.underline('/donate')} ${this.underline('/sponsors')}`} >Donations <i className="fas fa-caret-down"></i></span>
+                <span className="nav-dropdown">
+                        <ul>
+                            <li><Link to="/donate" >Donate</Link></li>
+                            <li><Link to="/sponsors">Sponsors</Link></li>
+                        </ul>
+                </span>
+                </span>
+                <Link to="/media" className={`nav-link ${this.underline('/media')}`}>Media</Link>
+                <Link to="/contact" className={`nav-link ${this.underline('/contact')}`}>Contact Us</Link>
+                <span>
+                    <span className={`nav-link ${this.underline('/resources')}`}>More <i className="fas fa-caret-down"></i></span>
+                    <span className="nav-dropdown">
+                        <ul>
+                            <li><Link to="/resources" >Resources</Link></li>
+                        </ul>
+                    </span>
+                </span>
             </div>
         )
     }

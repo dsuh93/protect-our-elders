@@ -40,3 +40,22 @@
 .underline{
 border-bottom: solid $poe-blue 1px;
 }
+
+.nav-dropdown{
+    position: absolute;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3px;
+    padding: 15px 15px;
+    box-shadow: 0 3px 6px 3px rgba(0, 0, 0, 0.2);
+    font-family: 'Quicksand', sans-serif;
+}
+.nav-dropdown a{
+    text-decoration: none;
+    color: black;
+    
+}
+.nav-dropdown a:hover{
+    color: $poe-blue;
+}
