@@ -1,8 +1,15 @@
 #navbar-main{
+    box-sizing: border-box;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 8vw 40px 8vw;
+
+}
+.navunder{
+
+    border-bottom: solid $poe-lblue 1px;
 }
 
 .nav-link{

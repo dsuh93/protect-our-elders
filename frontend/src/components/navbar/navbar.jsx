@@ -8,6 +8,11 @@ class Navbar extends React.Component {
         this.underline = this.underline.bind(this)
     }
 
+    navBorder(){
+        if (window.location.hash !== `#/`) {
+            return 'navunder'
+        }
+    }
     underline(hashPath){
         if(window.location.hash === `#${hashPath}`){
             return 'underline'
@@ -18,7 +23,7 @@ class Navbar extends React.Component {
     render(){
         debugger
         return(
-            <div id="navbar-main">
+            <div id="navbar-main" class={`${this.navBorder()}`}>
                 <Link to="/" class={`nav-link ${this.underline('/')}`}>Home</Link>
                 <Link to="/about" class={`nav-link ${this.underline('/about')}`}>About Us</Link>
                 <span class="nav-link">Get Involved <i class="fas fa-caret-down"></i></span>
