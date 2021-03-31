@@ -8,6 +8,7 @@ class Splash extends React.Component {
     }
 
     render() {
+       
         return (
             <div id="poelogo">
                 <img  src={poelogo}/>

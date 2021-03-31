@@ -2,6 +2,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .nav-link{
@@ -9,7 +10,14 @@
     color: black;
     cursor: pointer;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
     
+    
+}
+.nav-link>i {
+    margin-left: 5px;
 }
 .nav-link:hover{
     color: $poe-blue;
@@ -17,4 +25,8 @@
 }
 .nav-link:active{
     color: black;
+}
+
+.underline{
+border-bottom: solid $poe-blue 1px;
 }
