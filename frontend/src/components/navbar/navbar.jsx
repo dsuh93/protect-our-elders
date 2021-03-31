@@ -23,14 +23,13 @@ class Navbar extends React.Component {
     
 
     render(){
-        debugger
         return(
             <div id="navbar-main" className={`${this.navBorder()}`}>
                 <Link to="/" className={`nav-link ${this.underline('/')}`}>Home</Link>
                 <Link to="/about" className={`nav-link ${this.underline('/about')}`}>About Us</Link>
                 <span>
                     <span className={`nav-link ${this.underline('/feedback')} ${this.underline('/protection')} ${this.underline('/volunteers')}`}>Get Involved <i className="fas fa-caret-down"></i></span>
-                <span className="nav-dropdown">
+                <span id="involved" className="nav-dropdown">
                     <ul>
                         <li><Link to="/volunteers" >Volunteers</Link></li>
                         <li><Link to="/protection" >Protection in Your City</Link></li>
@@ -40,7 +39,7 @@ class Navbar extends React.Component {
                 </span>
                 <span>
                     <span className={`nav-link ${this.underline('/donate')} ${this.underline('/sponsors')}`} >Donations <i className="fas fa-caret-down"></i></span>
-                <span className="nav-dropdown">
+                    <span id="donate"className="nav-dropdown">
                         <ul>
                             <li><Link to="/donate" >Donate</Link></li>
                             <li><Link to="/sponsors">Sponsors</Link></li>
@@ -51,7 +50,7 @@ class Navbar extends React.Component {
                 <Link to="/contact" className={`nav-link ${this.underline('/contact')}`}>Contact Us</Link>
                 <span>
                     <span className={`nav-link ${this.underline('/resources')}`}>More <i className="fas fa-caret-down"></i></span>
-                    <span className="nav-dropdown">
+                    <span id="more" className="nav-dropdown">
                         <ul>
                             <li><Link to="/resources" >Resources</Link></li>
                         </ul>

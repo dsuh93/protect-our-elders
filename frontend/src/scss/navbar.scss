@@ -47,13 +47,18 @@ border-bottom: solid $poe-blue 1px;
     display: flex;
     flex-direction: column;
     margin-top: 3px;
-    padding: 15px 15px;
+    padding: 20px 15px 0 15px;
     box-shadow: 0 3px 6px 3px rgba(0, 0, 0, 0.2);
     font-family: 'Quicksand', sans-serif;
+}
+.nav-dropdown li{
+    margin-bottom: 20px;
 }
 .nav-dropdown a{
     text-decoration: none;
     color: black;
+    font-size: 14px;
+   
     
 }
 .nav-dropdown a:hover{
