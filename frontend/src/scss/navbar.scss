@@ -1,0 +1,20 @@
+#navbar-main{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-link{
+    text-transform: uppercase;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+.nav-link:hover{
+    color: $poe-blue;
+    transition: 0.4s;
+}
+.nav-link:active{
+    color: black;
+}

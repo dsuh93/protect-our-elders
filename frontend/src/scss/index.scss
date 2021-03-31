@@ -12,9 +12,11 @@ code {
     monospace;
 }
 
-$poe-blue: #003d5b;
+$poe-blue: #016288;
 
 // h1{
 //   font-size: 78px;
 // }
-@import './reset.scss'
+@import './reset.scss';
+@import './app.scss';
+@import './navbar.scss';
