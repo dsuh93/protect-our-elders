@@ -6,11 +6,9 @@ import Splash from './splash/splash';
 
 const App = () => (
     <div id="app-div">
-        {/* <h1>Protect Our Elders</h1> */}
-        {/* <Modal /> */}
-        {/* <NavBar /> */}
-        <Switch>
+        
             <Route path="/" component={Navbar} />
+        <Switch>
             <Route exact path="/" component={Splash} />
          </Switch>
     </div>
