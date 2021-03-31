@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const mongoose = require("mongoose");
-const passport = requre("passport");
+const passport = require("passport");
 
 //Models
 const Elders = require("../../models/Elder");
