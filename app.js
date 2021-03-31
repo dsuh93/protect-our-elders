@@ -2,6 +2,9 @@ const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
 const db = require("./config/keys").mongoURI;
+const volunteers = require("./routes/api/volunteers");
+const elders = require("./routes/api/elders");
+const admins = require("./routes/api/admins");
 const bodyParser = require('body-parser');
 const passport = require('passport');
 const path = require('path');
@@ -27,6 +30,7 @@ app.use(bodyParser.json());
 // Routes
 app.use("/api/volunteers", volunteers);
 app.use("/api/elders", elders);
+app.use("/api/admins", admins);
 
 const port = process.env.PORT || 5000;
 app.listen(port, () => {console.log(`Listening on port ${port}`)});
