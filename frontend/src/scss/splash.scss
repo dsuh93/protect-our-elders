@@ -1,6 +1,7 @@
 // Splash page styling
 
 #poelogo{
+    height:100%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -9,9 +10,8 @@
 
 }
 #poelogo > img:first-of-type{
-    width: 300px;
-    height:300px;
-    margin-right: 30px;
+    
+    margin-right: 50px;
 
 }
 #poelogo > img:last-of-type{

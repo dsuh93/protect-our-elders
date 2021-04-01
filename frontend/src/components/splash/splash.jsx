@@ -12,7 +12,7 @@ class Splash extends React.Component {
        
         return (
             <div id="poelogo">
-                <img  src={poelogo}/>
+                <img  src='https://i.ibb.co/S6kXhBs/logo-1.png'/>
                 {/* <img  src={poetxt}/> */}
                 <h1 id="logo-text">protect <br/>our elders</h1>
             </div>
