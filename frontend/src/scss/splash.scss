@@ -17,7 +17,7 @@
 #poelogo > img:last-of-type{
 
     height:250px;
-    animation: Fade_In 3s ;
+    animation: Fade_In 4s ;
 }
 
 #logo-text{
@@ -30,11 +30,11 @@
 
 @keyframes Up{
     0%{
-        transform: translateY(150px);
+        transform: translateY(100%);
     }
 
     100%{
-        transform: translateY(0px);
+        transform: translateY(0%);
     }
 }
 
@@ -43,7 +43,7 @@
         opacity: 0;
     }
 
-    50%{
+    40%{
         opacity: 0;
     }
 
