@@ -17,6 +17,7 @@
 #poelogo > img:last-of-type{
 
     height:250px;
+    animation: Fade_In 3s ;
 }
 
 #logo-text{
@@ -24,4 +25,29 @@
     font-size: 125px;
     font-family: 'Farro', sans-serif;
     line-height: 1.2;
+    animation: Up 1.5s ;
+}
+
+@keyframes Up{
+    0%{
+        transform: translateY(150px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes Fade_In{
+    0%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 100%;
+    }
 }
