@@ -7,6 +7,7 @@ class Navbar extends React.Component {
         super(props);
         this.underline = this.underline.bind(this)
         this.dropdown = this.dropdown.bind(this)
+        this.linkClick = this.linkClick.bind(this)
     }
 
     navBorder(){
@@ -27,7 +28,7 @@ class Navbar extends React.Component {
         const involved = document.getElementById('involved')
         const donate = document.getElementById('donate')
         const more = document.getElementById('more')
-        debugger
+   
         if(category === 'involved'){
             if (involved.style.display === 'none' || involved.style.display === ''){
                 involved.style.display = 'flex'
@@ -60,6 +61,21 @@ class Navbar extends React.Component {
         }
     }
 
+    linkClick(category){
+        const involved = document.getElementById('involved')
+        const donate = document.getElementById('donate')
+        const more = document.getElementById('more')
+
+        if (category === 'involved') {
+                involved.style.display = 'none'
+        } else if (category === 'donate') {
+            donate.style.display = 'none'
+        } else if (category === 'more') {
+            more.style.display = 'none'
+        }
+
+        
+    }
     
 
     render(){
@@ -71,9 +87,9 @@ class Navbar extends React.Component {
                     <span onClick={() => this.dropdown('involved')} className={`nav-link ${this.underline('/feedback')} ${this.underline('/protection')} ${this.underline('/volunteers')}`}>Get Involved <i className="fas fa-caret-down"></i></span>
                 <span id="involved" className="nav-dropdown">
                     <ul>
-                        <li><Link to="/volunteers" >Volunteers</Link></li>
-                        <li><Link to="/protection" >Protection in Your City</Link></li>
-                        <li><Link to="/feedback" >Feedback</Link></li>
+                            <li onClick={() => this.linkClick('involved')}><Link to="/volunteers">Volunteers</Link></li>
+                            <li onClick={() => this.linkClick('involved')}><Link to="/protection" >Protection in Your City</Link></li>
+                            <li onClick={() => this.linkClick('involved')}><Link to="/feedback" >Feedback</Link></li>
                     </ul>
                 </span>
                 </span>
@@ -81,8 +97,8 @@ class Navbar extends React.Component {
                     <span onClick={() => this.dropdown('donate')} className={`nav-link ${this.underline('/donate')} ${this.underline('/sponsors')}`} >Donations <i className="fas fa-caret-down"></i></span>
                     <span id="donate"className="nav-dropdown">
                         <ul>
-                            <li><Link to="/donate" >Donate</Link></li>
-                            <li><Link to="/sponsors">Sponsors</Link></li>
+                            <li onClick={() => this.linkClick('donate')}><Link to="/donate" >Donate</Link></li>
+                            <li onClick={() => this.linkClick('donate')}><Link to="/sponsors">Sponsors</Link></li>
                         </ul>
                 </span>
                 </span>
@@ -92,7 +108,7 @@ class Navbar extends React.Component {
                     <span onClick={() => this.dropdown('more')} className={`nav-link ${this.underline('/resources')}`}>More <i className="fas fa-caret-down"></i></span>
                     <span id="more" className="nav-dropdown">
                         <ul>
-                            <li><Link to="/resources" >Resources</Link></li>
+                            <li onClick={() => this.linkClick('more')}><Link to="/resources" >Resources</Link></li>
                         </ul>
                     </span>
                 </span>
