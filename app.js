@@ -9,15 +9,14 @@ const path = require('path');
 const volunteers = require("./routes/api/volunteers");
 const elders = require("./routes/api/elders");
 
-
 mongoose
-	.connect(db, { useUnifiedTopology: true, useNewUrlParser: true })
-	.then(() => console.log("Connected to mongoDB"))
-	.catch((err) => console.log(err));
+  .connect(db, {useUnifiedTopology: true, useNewUrlParser: true })
+  .then(() => console.log("Connected to mongoDB"))
+  .catch(err => console.log(err));
 
-  app.get("/", (req, res) => {
-    res.send("Hello Protect our Elders!")
-  });
+  // app.get("/", (req, res) => {
+  //   res.send("Hello Protect our Elders!")
+  // });
   
   // Middleware
   app.use(passport.initialize());
