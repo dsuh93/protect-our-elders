@@ -12,15 +12,38 @@
 #poelogo > img:first-of-type{
     
     margin-right: 50px;
-
-}
-#poelogo > img:last-of-type{
-
     height:250px;
+    animation: Fade_In 4s ;
 }
 
 #logo-text{
     color: $logo-blue;
     font-size: 125px;
     font-family: 'Farro', sans-serif;
+    line-height: 1.2;
+    animation: Up 1.5s ;
+}
+
+@keyframes Up{
+    0%{
+        transform: translateX(100%);
+    }
+
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes Fade_In{
+    0%{
+        opacity: 0;
+    }
+
+    40%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 100%;
+    }
 }
