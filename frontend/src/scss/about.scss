@@ -1,0 +1,52 @@
+.about-outer {
+    width: 100%;
+    height: auto;
+}
+
+.about-inner {
+    margin: auto;
+    width: 70%;
+    min-width: 1100px;
+    height: auto;
+}
+
+.about-head{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+
+}
+.about-title{
+    font-size: 60px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+.about-content{
+   display: flex;
+   justify-content:space-between;
+}
+.about-image{
+    img {
+        width: 400px;
+        height: auto;
+        object-fit: cover;
+    }
+    width: 25%;
+
+}
+.about-text{
+    width: 75%;
+    p{
+        padding-bottom: 20px;
+        padding-right: 50px;
+        padding-left: 50px;
+        font-size: 16px;
+    
+    }
+}
+
