@@ -8,6 +8,57 @@ const passport = require('passport');
 const validateLoginInput = require('../../validation/login');
 
 
+router.post('/register', (req, res) => {
+    // Check to make sure nobody has already registered with a duplicate email
+     
+    const { errors, isValid } = validateLoginInput(req.body);
+
+    if(!isValid){
+        return res.status(400).json(errors);
+    }
+     
+    Admin.findOne({ username: req.body.username })
+      .then(user => {
+        if (user) {
+          // Throw a 400 error if the email address already exists
+          return res.status(400).json({username: "A user has already registered with this name"})
+        } else {
+          // Otherwise create a new user
+          const newUser = new Admin({
+            username: req.body.username,
+            password: req.body.password
+          })
+           
+          bcrypt.genSalt(10, (err, salt) => {
+            bcrypt.hash(newUser.password, salt, (err, hash) => {
+              if (err) throw err;
+              newUser.password = hash;
+              newUser.save()
+                .then(user =>{ 
+                    const payload = {
+                        id: user.id,
+                        username: user.username
+                    }
+                    jwt.sign(
+                        payload,
+                        keys.secretOrKey,
+                        {expiresIn: 3600},
+                        (err, token) => {
+                             
+                            res.json({
+                                success: true,
+                                token: "Bearer " + token
+                            })
+                        }
+                    )
+                })
+                .catch(err => console.log(err));
+            })
+          })
+        }
+      })
+  })
+
 router.post('/login', (req, res) => {
     const{ errors, isValid } = validateLoginInput(req.body);
 
@@ -17,6 +68,8 @@ router.post('/login', (req, res) => {
 
     const username = req.body.username;
     const password = req.body.password;
+
+    console.log(username, password)
 
     Admin.findOne({ username })
         .then(user => {

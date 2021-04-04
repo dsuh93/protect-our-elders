@@ -2,15 +2,13 @@ const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
 const db = require("./config/keys").mongoURI;
-const volunteers = require("./routes/api/volunteers");
-const elders = require("./routes/api/elders");
-const admins = require("./routes/api/admins");
 const bodyParser = require('body-parser');
 const passport = require('passport');
 const path = require('path');
 
 const volunteers = require("./routes/api/volunteers");
 const elders = require("./routes/api/elders");
+const admins = require("./routes/api/admins");
 
 mongoose
   .connect(db, {useUnifiedTopology: true, useNewUrlParser: true })
