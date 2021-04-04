@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+$poe-lblue: #a2bdc9;
+$poe-blue: #016288;
+$logo-blue: #003d5b;
+
+// h1{
+//   font-size: 78px;
+// }
+@import './reset.scss';
+@import './app.scss';
+@import './navbar.scss';
+@import './splash.scss';
+@import './contact_us.scss';
+@import './volunteers.scss';

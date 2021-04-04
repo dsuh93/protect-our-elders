@@ -1,0 +1,86 @@
+#navbar-main{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8vw 40px 8vw;
+
+
+}
+.navunder{
+
+    border-bottom: solid $poe-lblue 1px;
+}
+
+.nav-link{
+    text-transform: uppercase;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14.5px;
+    letter-spacing: 2.5px;
+    
+}
+.nav-link>i {
+    margin-left: 5px;
+}
+.nav-link:hover{
+    color: $poe-blue;
+    transition: 0.4s;
+}
+.nav-link:active{
+    color: black;
+}
+
+.underline{
+border-bottom: solid $poe-blue 1px;
+}
+
+#involved{
+    display: none;
+}
+#donate{
+    display: none;
+}
+#more{
+    display: none;
+}
+
+.nav-dropdown{
+    position: absolute;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3px;
+    padding: 20px 15px 0 15px;
+    box-shadow: 0 3px 6px 3px rgba(0, 0, 0, 0.2);
+    font-family: 'Quicksand', sans-serif;
+}
+.nav-dropdown li{
+    margin-bottom: 20px;
+}
+.nav-dropdown a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+   
+    
+}
+.nav-dropdown a:hover{
+    color: $poe-blue;
+}
+
+.up{
+ transform: rotate(180deg);
+ transition: all 0.3s ease-in-out;
+}
+
+.down{
+ transform: rotate(0deg);
+ transition: all 0.3s ease-in-out;
+}
