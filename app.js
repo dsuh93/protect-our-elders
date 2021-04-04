@@ -14,14 +14,9 @@ mongoose
   .then(() => console.log("Connected to mongoDB"))
   .catch(err => console.log(err));
 
-mongoose
-	.connect(db, { useUnifiedTopology: true, useNewUrlParser: true })
-	.then(() => console.log("Connected to mongoDB"))
-	.catch((err) => console.log(err));
-
-  app.get("/", (req, res) => {
-    res.send("Hello Protect our Elders!")
-  });
+  // app.get("/", (req, res) => {
+  //   res.send("Hello Protect our Elders!")
+  // });
   
   // Middleware
   app.use(passport.initialize());
