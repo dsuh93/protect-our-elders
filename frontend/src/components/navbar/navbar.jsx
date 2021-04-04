@@ -17,8 +17,31 @@ class Navbar extends React.Component {
     }
 
     underline(hashPath){
+        const involved = document.getElementById('involved')
+        const donate = document.getElementById('donate')
+        const more = document.getElementById('more')
+        const iCaret = document.getElementById('i-caret')
+        const dCaret = document.getElementById('d-caret')
+        const mCaret = document.getElementById('m-caret')
+
         if(window.location.hash === `#${hashPath}`){
+            if(involved){
+                involved.style.display = 'none'
+                iCaret.classList.add('down')
+                iCaret.classList.remove('up')
+            }
+            if (donate){
+                donate.style.display = 'none'
+                dCaret.classList.add('down')
+                dCaret.classList.remove('up')
+            }
+            if (more){
+                more.style.display = 'none'
+                mCaret.classList.add('down')
+                mCaret.classList.remove('up')
+            }
             return 'underline'
+
         }
 
     }
