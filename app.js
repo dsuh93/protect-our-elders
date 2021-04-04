@@ -8,6 +8,7 @@ const path = require('path');
 
 const volunteers = require("./routes/api/volunteers");
 const elders = require("./routes/api/elders");
+const admins = require("./routes/api/admins");
 
 mongoose
   .connect(db, {useUnifiedTopology: true, useNewUrlParser: true })
@@ -27,6 +28,7 @@ app.use(bodyParser.json());
 // Routes
 app.use("/api/volunteers", volunteers);
 app.use("/api/elders", elders);
+app.use("/api/admins", admins);
 
 const port = process.env.PORT || 5000;
 app.listen(port, () => {console.log(`Listening on port ${port}`)});
