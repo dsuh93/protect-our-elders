@@ -9,6 +9,10 @@ const path = require('path');
 const volunteers = require("./routes/api/volunteers");
 const elders = require("./routes/api/elders");
 
+mongoose
+  .connect(db, {useUnifiedTopology: true, useNewUrlParser: true })
+  .then(() => console.log("Connected to mongoDB"))
+  .catch(err => console.log(err));
 
 mongoose
 	.connect(db, { useUnifiedTopology: true, useNewUrlParser: true })
