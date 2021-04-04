@@ -1,0 +1,30 @@
+.footer-container {
+  // Guide to make it stick to the bottom:
+  // https://css-tricks.com/couple-takes-sticky-footer/
+
+  display: flex;
+  justify-content: center;
+
+  padding: 20px 0px ;
+
+  font-family: "Helvetica Neue", sans-serif;
+  color: white;
+  font-size: 15px;
+  // background-color: $main-color;
+  background-color: $logo-blue;
+  width: 100%;
+
+  footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    max-width: 1000px;
+    width: 100%;
+  }
+}
+
+#footer-copyright {
+  margin-top: 55px;
+  font-weight: bold;
+}
