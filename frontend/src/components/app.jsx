@@ -6,6 +6,9 @@ import Splash from './splash/splash';
 import About from './about/about';
 import Footer from './footer/footer'
 
+console.log(process.env.REACT_APP_GOOGLE_API_KEY);
+
+
 const App = () => (
     <>
         <div id="app-div">

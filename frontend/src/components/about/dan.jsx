@@ -21,22 +21,22 @@ function dan(props){
           <ul>
             <li>
               <a href={data.website}>
-                <i class=" fa fa-coffee" aria-hidden="true" />
+                <i className=" fa fa-coffee" aria-hidden="true" />
               </a>
             </li>
             <li>
               <a href={data.linkedin}>
-                <i class=" fa fa-linkedin" aria-hidden="true" />
+                <i className=" fa fa-linkedin" aria-hidden="true" />
               </a>
             </li>
             <li>
               <a href={data.github}>
-                <i class=" fa fa-github" aria-hidden="true" />
+                <i className=" fa fa-github" aria-hidden="true" />
               </a>
             </li>
             <li>
               <a href={data.angellist}>
-                <i class=" fa fa-angellist" aria-hidden="true" />
+                <i className=" fa fa-angellist" aria-hidden="true" />
               </a>
             </li>
           </ul>
