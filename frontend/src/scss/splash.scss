@@ -12,11 +12,8 @@
 #poelogo > img:first-of-type{
     
     margin-right: 50px;
-
-}
-#poelogo > img:last-of-type{
-
     height:250px;
+    animation: Fade_In 4s ;
 }
 
 #logo-text{
