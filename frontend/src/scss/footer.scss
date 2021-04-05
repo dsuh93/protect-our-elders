@@ -4,7 +4,9 @@
 
   display: flex;
   justify-content: center;
-
+  position: sticky;
+  top:100%;
+  bottom:0;
   padding: 20px 0px ;
 
   font-family: "Helvetica Neue", sans-serif;

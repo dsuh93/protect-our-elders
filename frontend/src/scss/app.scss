@@ -2,3 +2,8 @@
     box-sizing: border-box;
     padding: 9vh 12vw;
 }
+
+#outer-div{
+    min-height: 100vh;
+    position: relative;
+}

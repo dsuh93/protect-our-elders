@@ -7,7 +7,7 @@ import About from './about/about';
 import Footer from './footer/footer'
 
 const App = () => (
-    <>
+    <div id="outer-div">
         <div id="app-div">
                 <Route path="/" component={Navbar} />
             <Switch>
@@ -18,7 +18,7 @@ const App = () => (
             
         </div>
         <Footer />
-    </>
+    </div>
 );
 
 export default App;
