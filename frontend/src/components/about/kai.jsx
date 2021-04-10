@@ -8,6 +8,7 @@ function kai (props) {
         angellist: "https://angel.co/u/henry-zihao-huang"
       };
   
+      
     return (
       <div className="about-card-container">
         <div className="about-card-subcontainer">
