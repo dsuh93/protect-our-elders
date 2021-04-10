@@ -14,8 +14,8 @@ class Splash extends React.Component {
         </div>
 
         <div className="splash-buttons-container">
-          <button className="volunteer-request-btn">Request a Volunteer</button>
-          <button className="volunteer-signup-btn">Become a Volunteer</button>
+          <button className="volunteer-request-btn"><a href="https://forms.gle/Qs3DonqiTcnbFzDM8" target="_blank" rel="noopener noreferrer" >Request a Volunteer</a></button>
+          <button className="volunteer-signup-btn"><a href="https://forms.gle/E4rjfxxpRdAJHZUT6" target="_blank" rel="noopener noreferrer">Become a Volunteer</a></button>
         </div>
     </div>
     );
