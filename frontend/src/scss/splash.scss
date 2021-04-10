@@ -28,7 +28,11 @@
     margin-top:33px;
 }
 
-.volunteer-request-btn, .volunteer-signup-btn{
+.form-link {
+    text-decoration: none;
+}
+
+.volunteer-request-btn, .volunteer-signup-btn {
     font-family:'Helvetica Neue', sans-serif;
     font-weight:500;
     color:white;
@@ -52,7 +56,7 @@
 }   
 
 
-.volunteer-request-btn:hover, .volunteer-signup-btn:hover{
+.volunteer-request-btn:hover, .volunteer-signup-btn:hover {
     cursor:pointer;
     color:$logo-blue;
     background-color: white;
