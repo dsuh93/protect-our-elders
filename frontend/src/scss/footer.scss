@@ -7,8 +7,8 @@
   position: sticky;
   top:100%;
   bottom:0;
-  padding: 20px 0px ;
-
+  padding: 20px 2vw;
+  box-sizing: border-box;
   font-family: "Helvetica Neue", sans-serif;
   color: white;
   font-size: 15px;
@@ -21,12 +21,47 @@
     align-items: center;
     flex-direction: column;
 
-    max-width: 1000px;
     width: 100%;
   }
 }
 
+.footer-links {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+
+  a {
+    color: white;
+    text-decoration: none;
+
+    &:hover{
+      color: lightgray;
+      transition: 0.2s;
+    }
+  }
+
+  .lang-links{
+    display: flex;
+    justify-content:center;
+    width: 300px;
+    flex-wrap: wrap;
+
+    li {
+      cursor: pointer;
+    }
+
+    li:first-of-type {
+      cursor: auto;
+      &:hover {
+      color: white;
+      }
+    }
+
+  }
+}
+
 #footer-copyright {
-  margin-top: 55px;
+  margin-top: 35px;
   font-weight: bold;
 }
