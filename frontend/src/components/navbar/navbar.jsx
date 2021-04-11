@@ -11,7 +11,7 @@ class Navbar extends React.Component {
     }
 
     navBorder(){
-        if (window.location.hash !== `#/`) {
+        if (window.location.hash !== `#`) {
             return 'navunder'
         }
     }
