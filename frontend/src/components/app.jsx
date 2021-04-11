@@ -1,5 +1,5 @@
 import React from 'react';
-// import { AuthRoute, ProtectedRoute } from '../util/route_util';
+import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import { Route, Switch } from 'react-router-dom';
 import Navbar from './navbar/navbar';
 import Splash from './splash/splash';
@@ -7,7 +7,8 @@ import About from './about/about';
 import Protection from './protection/protection';
 import Volunteers from './volunteers/volunteers';
 import Feedback from './feedback/feedback';
-import Footer from './footer/footer'
+import Footer from './footer/FooterContainer';
+import Login from './session/LoginContainer';
 
 const App = () => (
     <div id="outer-div">
@@ -19,6 +20,7 @@ const App = () => (
                 <Route exact path="/protection" component={Protection} />
                 <Route exact path="/volunteers" component={Volunteers} />
                 <Route exact path="/feedback" component={Feedback} />
+                <AuthRoute exact path="/login" component={Login} />
             </Switch>
 
             
