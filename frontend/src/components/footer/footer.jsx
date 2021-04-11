@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 
 const Footer = (props) => {
 
-    const languages = ['English', 'Spanish', 'Mandarin', 'Cantonese', 'Taiwanese', 'Korean', 'Japanese', 'Tagalog', 'Vietnamese']
+    const languages = ['English', 'Spanish', 'Simplified Chinese', 'Traditional Chinese', 'Korean', 'Japanese', 'Tagalog', 'Vietnamese']
 
 
     return (
