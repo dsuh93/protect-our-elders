@@ -1,16 +1,25 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-const Footer = (props) => {
+class Footer extends React.Component{
+    constructor(props){
+        super(props);
+    }
 
-    const languages = ['English', 'Spanish', 'Simplified Chinese', 'Traditional Chinese', 'Korean', 'Japanese', 'Tagalog', 'Vietnamese']
-
-
+    render(){
+    debugger
+    const languages = ['English', 'Spanish', 'Simplified Chinese', 'Traditional Chinese', 'Korean', 'Japanese', 'Tagalog', 'Vietnamese'];
     return (
         <section className="footer-container">
             <footer>
                 <div className="footer-links">
-                    <Link>Admin Login</Link>
+                    {
+                        this.props.isloggedIn ? (
+                            <button onClick={() => this.props.logout()}>Log Out</button>
+                        ):(
+                            <Link to='/login'>Admin Login</Link>
+                        )
+                    }
                     <div className="dropup">
                         <ul className="lang-popup">
                             {languages.map(lang => <li>{lang}</li>)}
@@ -24,6 +33,7 @@ const Footer = (props) => {
             </footer>
         </section>
     )
+    }
 }
 
 export default Footer;
