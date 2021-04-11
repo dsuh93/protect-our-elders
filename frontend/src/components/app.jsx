@@ -1,10 +1,11 @@
 import React from 'react';
-// import { AuthRoute, ProtectedRoute } from '../util/route_util';
+import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import { Route, Switch } from 'react-router-dom';
 import Navbar from './navbar/navbar';
 import Splash from './splash/splash';
 import About from './about/about';
-import Footer from './footer/footer'
+import Footer from './footer/FooterContainer';
+import Login from './session/LoginContainer';
 
 const App = () => (
     <div id="outer-div">
@@ -13,6 +14,7 @@ const App = () => (
             <Switch>
                 <Route exact path="/" component={Splash} />
                 <Route exact path="/about" component={About} />
+                <AuthRoute exact path="/login" component={Login} />
             </Switch>
 
             
