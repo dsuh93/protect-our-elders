@@ -7,7 +7,7 @@
   position: sticky;
   top:100%;
   bottom:0;
-  padding: 20px 2vw;
+  padding: 20px 12vw;
   box-sizing: border-box;
   font-family: "Helvetica Neue", sans-serif;
   color: white;
@@ -41,24 +41,44 @@
     }
   }
 
-  .lang-links{
-    display: flex;
-    justify-content:center;
-    width: 300px;
-    flex-wrap: wrap;
+  .dropup {
+  position: relative;
+  display: inline-block;
+  }
+  .dropup:hover .lang-popup {
+  display: block;
+  }
+  i {
+     color: white;
+     font-size: 25px;
+     cursor: pointer;
 
-    li {
-      cursor: pointer;
+    &:hover{
+      color: lightgray;
+      transition: 0.2s;
     }
+  }
 
-    li:first-of-type {
-      cursor: auto;
-      &:hover {
-      color: white;
+  .lang-popup{
+    display:none;
+    position: absolute;
+    background-color: whitesmoke;
+    color: $logo-blue;
+    margin-top: -220.8px;
+    box-sizing: border-box;
+
+    li{
+      padding: 5px 10px;
+      &:hover{
+        background-color: $logo-blue;
+        color: white;
+        transition: 0.2s;
+        cursor: pointer;
       }
     }
-
+    
   }
+ 
 }
 
 #footer-copyright {
