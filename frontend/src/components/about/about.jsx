@@ -27,8 +27,8 @@ function About () {
                 Violence against anyone, especially the most vulnerable and 
                 revered members of our community, irrespective of their race, 
                 ethnicity, or other identifying characteristics, is both morally 
-                repugnant and reprehensible. With this project we aim to take a 
-                stand, and employ our development skills for good. We hope to 
+                repugnant and reprehensible. With this project, we aim to take a 
+                stand and employ our development skills for good. We hope to 
                 donate this application to any person or organization with the 
                 desire and means to assume responsibility for what we've built. 
                 If this is something you might be interested in please do not 
