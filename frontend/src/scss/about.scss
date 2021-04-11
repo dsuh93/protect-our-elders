@@ -1,6 +1,15 @@
 .about-page-container{
     display:flex;
     flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
     margin-top:33px;
+
+    .about-text{
+        padding: 50px 12%;
+        text-align: center;
+        font-size: 22px;
+        color: $poe-blue;
+        line-height: 1.7;
+    }
 }
