@@ -26,9 +26,9 @@ class LoginForm extends React.Component {
         this.props.login(user);
     }
 
-    guestLoginUpdate(key, vaule){
+    guestLoginUpdate(key, value){
         this.setState({
-            [key]: vaule
+            [key]: value
         })
     }
 
@@ -38,37 +38,37 @@ class LoginForm extends React.Component {
     }
 
     render() {
+        const displayUsernameError = this.props.errors ? (<p className="error">{this.props.errors.username}</p>) : null;
+        const displayPasswordError = this.props.errors ? (<p className="error">{this.props.errors.password}</p>) : null;
         debugger
         return (
             <div className="login-form-container">
+                <h2>Admin Login:</h2>
+                <br/>
                 <form onSubmit={this.handleSubmit}>
+
                     <div className="login-form">
                         <div className="input-container">
-                        <p className="input-label">Username</p>
-                        <input  className="form-input" type="text"
-                            value={this.state.username}
-                            onChange={this.update('username')}
-                            placeholder="Username"
-                        />
-                        {
-                            this.props.errors? (
-                                <p className="error">{this.props.errors.username}</p>
-                            ): (null)
-                        }
+                            <p className="input-label">Username</p>
+                            <input
+                                className="form-input"
+                                type="text"
+                                value={this.state.username}
+                                onChange={this.update('username')}
+                                placeholder="Username"
+                            />
+                            {displayUsernameError}
                         </div>
                         <div className="input-container">
                             <p className="input-label">Password</p>
-                            <input className="form-input" type="password"
-                            value={this.state.password}
-                            onChange={this.update('password')}
-                            placeholder="Password"
+                            <input
+                                className="form-input"
+                                type="password"
+                                value={this.state.password}
+                                onChange={this.update('password')}
+                                placeholder="Password"
                             />
-                            
-                        {
-                            this.props.errors? (
-                                <p className="error">{this.props.errors.password}</p>
-                            ): (null)
-                        }
+                            {displayPasswordError}
                         </div>
                         <button className="form-submit">Log in</button>
                     </div>
