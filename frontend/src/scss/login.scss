@@ -1,0 +1,94 @@
+// Admin login page styling
+
+.login-form-container {
+  border: 1px solid $poe-blue;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: fit-content;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-family:'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  color: $poe-blue;
+
+  h2 {
+    font-size: 30px;
+    text-decoration: underline;
+  }
+
+  .login-form {
+    
+
+    .input-container {
+      display: flex;
+      flex-direction: column;
+
+      .input-label {
+        font-size: 17px;
+        margin-top: 15px;
+
+      }
+
+      .form-input {
+        margin-top: 5px;
+        border: 1px solid $poe-lblue;
+        border-radius: 5px;
+        padding: 5px 3px;
+
+        font-size: 15px;
+        
+      }
+
+      .login-form-error {
+        margin-top: 5px;
+        color: red;
+      }
+    }
+
+    .form-submit-btn {
+      font-family:'Helvetica Neue', sans-serif;
+      font-weight:600;
+      color:white;
+      font-size: 17px;
+      word-wrap: wrap;
+      height:30px;
+      margin-top: 15px;
+      padding:22px;
+
+      border-radius:40px; 
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      background-color: $logo-blue;
+
+      outline:none;
+      border:0px;
+    }
+
+    .form-submit-btn:hover {
+      cursor:pointer;
+      color:$logo-blue;
+      background-color: white;
+    }
+  }
+}
+
+.login-disclaimer {
+  display: flex;
+  width: fit-content;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 13px;
+}
+
+

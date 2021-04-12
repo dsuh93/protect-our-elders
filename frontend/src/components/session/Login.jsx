@@ -16,6 +16,7 @@ class LoginForm extends React.Component {
             [field]: e.target.value
         });
     }
+
     handleSubmit(e){
         e.preventDefault();
         let user = {
@@ -26,9 +27,9 @@ class LoginForm extends React.Component {
         this.props.login(user);
     }
 
-    guestLoginUpdate(key, vaule){
+    guestLoginUpdate(key, value){
         this.setState({
-            [key]: vaule
+            [key]: value
         })
     }
 
@@ -38,41 +39,50 @@ class LoginForm extends React.Component {
     }
 
     render() {
-        debugger
+        const displayUsernameError = this.props.errors ? (<p className="login-form-error">{this.props.errors.username}</p>) : null;
+        const displayPasswordError = this.props.errors ? (<p className="login-form-error">{this.props.errors.password}</p>) : null;
+        // debugger
         return (
-            <div className="login-form-container">
-                <form onSubmit={this.handleSubmit}>
-                    <div className="login-form">
-                        <div className="input-container">
-                        <p className="input-label">Username</p>
-                        <input  className="form-input" type="text"
-                            value={this.state.username}
-                            onChange={this.update('username')}
-                            placeholder="Username"
-                        />
-                        {
-                            this.props.errors? (
-                                <p className="error">{this.props.errors.username}</p>
-                            ): (null)
-                        }
+            <div className="login-page">
+                <div className="login-form-container">
+                    <h2>Admin Login:</h2>
+                    <br/>
+                    <form onSubmit={this.handleSubmit}>
+                        <div className="login-form">
+                            <div className="input-container">
+                                <label className="input-label">Username:</label>
+                                <input
+                                    className="form-input"
+                                    type="text"
+                                    value={this.state.username}
+                                    onChange={this.update('username')}
+                                    placeholder="Username"
+                                />
+                                {displayUsernameError}
+                            </div>
+                            <div className="input-container">
+                                <label className="input-label">Password:</label>
+                                <input
+                                    className="form-input"
+                                    type="password"
+                                    value={this.state.password}
+                                    onChange={this.update('password')}
+                                    placeholder="Password"
+                                />
+                                {displayPasswordError}
+                            </div>
+                            <br/>
+                            <button className="form-submit-btn">Log in</button>
                         </div>
-                        <div className="input-container">
-                            <p className="input-label">Password</p>
-                            <input className="form-input" type="password"
-                            value={this.state.password}
-                            onChange={this.update('password')}
-                            placeholder="Password"
-                            />
-                            
-                        {
-                            this.props.errors? (
-                                <p className="error">{this.props.errors.password}</p>
-                            ): (null)
-                        }
-                        </div>
-                        <button className="form-submit">Log in</button>
-                    </div>
-                </form>
+                    </form>
+                </div>
+                <span class="login-disclaimer">
+                    *If you are an admin and do not
+                    <br/>
+                    have access please contact:
+                    <br/>
+                    protect.our.elders.contact@gmail.com
+                </span>
             </div>
         );
     }
