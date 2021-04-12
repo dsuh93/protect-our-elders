@@ -24,12 +24,12 @@ function bert(props) {
                 <i class=" fa fa-coffee" aria-hidden="true" />
               </a>
             </li>
-            <li>
+          <li>
               <a href={data.linkedin}>
                 <i class=" fa fa-linkedin" aria-hidden="true" />
               </a>
             </li>
-            <li>
+            <li >
               <a href={data.github}>
                 <i class=" fa fa-github" aria-hidden="true" />
               </a>
