@@ -12,7 +12,7 @@
 
 }
 
-@keyframes Fade_In{
+@keyframes FadeIn{
     0%{
         opacity: 0;
     }
@@ -39,7 +39,7 @@
     
     margin-right: 50px;
     height:250px;
-    animation: Fade_In 4s ;
+    animation: FadeIn 4s;
 }
 
 #logo-text{
@@ -47,7 +47,7 @@
     font-size: 125px;
     font-family: 'Farro', sans-serif;
     line-height: 1.2;
-    animation: Up 1.5s ;
+    animation: Up 1.5s;
 }
 
 
