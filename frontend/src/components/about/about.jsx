@@ -16,12 +16,12 @@ function About () {
             <span className="about-text"> On October 26, 2020, seven aspiring developers set out on a 
                 journey that would change their lives forever. Equipped only 
                 with knowledge of how to iterate through an array and a dream, 
-                we took our places in App Academy's most illustrous cohort, and 
+                we took our places in App Academy's most illustrious cohort, and 
                 forged a path through the unknown, determined to conquer the 
                 world of software engineering. We learned, we laughed, we 
                 sometimes cried and developed applications to commemorate our 
                 pain in the form of memes. Most importantly, we crafted bonds 
-                of friendship and cameraderie that would last a lifetime. We 
+                of friendship and camaraderie that would last a lifetime. We 
                 collectively were, and still are, greatly affected by the rise
                 of targeted violence against the AAPI community during the pandemic. 
                 Violence against anyone, especially the most vulnerable and 

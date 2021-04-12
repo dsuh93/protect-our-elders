@@ -2,10 +2,10 @@ function kai (props) {
     const data = {
         name: "Kai Zhu",
         title: "Software Engineer",
-        website: "https://henryzihaohuang.github.io/",
-        linkedin: "https://www.linkedin.com/in/zihaohuang/",
-        github: "https://github.com/henryzihaohuang",
-        angellist: "https://angel.co/u/henry-zihao-huang"
+        website: "https://kaizhu94.github.io/",
+        linkedin: "https://www.linkedin.com/in/kaihua-zhu-177a041b1/",
+        github: "https://github.com/kaizhu94",
+        angellist: "https://angel.co/u/kaihua-zhu"
       };
     
     return (

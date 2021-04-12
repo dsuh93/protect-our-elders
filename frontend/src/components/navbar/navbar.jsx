@@ -150,7 +150,6 @@ class Navbar extends React.Component {
         return(
             <div id="navbar-main" className={`${this.navBorder()}`}>
                 <Link to="/" className={`nav-link ${this.underline('/')}`}>Home</Link>
-                <Link to="/about" className={`nav-link ${this.underline('/about')}`}>About Us</Link>
                 <span>
                     <span onClick={() => this.dropdown('involved')} className={`nav-link ${this.underline('/feedback')} ${this.underline('/protection')} ${this.underline('/volunteers')}`}>Get Involved <i id="i-caret" className="fas fa-caret-down"></i></span>
                 <span id="involved" className="nav-dropdown">
@@ -161,6 +160,7 @@ class Navbar extends React.Component {
                     </ul>
                 </span>
                 </span>
+                <Link to="/about" className={`nav-link ${this.underline('/about')}`}>About Us</Link>
                 <span>
                     <span onClick={() => this.dropdown('donate')} className={`nav-link ${this.underline('/donate')} ${this.underline('/sponsors')}`} >Donations <i id="d-caret"className="fas fa-caret-down"></i></span>
                     <span id="donate"className="nav-dropdown">
@@ -172,14 +172,14 @@ class Navbar extends React.Component {
                 </span>
                 {/* <Link to="/media" className={`nav-link ${this.underline('/media')}`}>Media</Link> */}
                 <Link to="/contact" className={`nav-link ${this.underline('/contact')}`}>Contact Us</Link>
-                <span>
+                {/* <span> */}
                     {/* <span onClick={() => this.dropdown('more')} className={`nav-link ${this.underline('/resources')}`}>More <i id="m-caret" className="fas fa-caret-down"></i></span>
                     <span id="more" className="nav-dropdown">
                         <ul>
                             <li onClick={() => this.linkClick('more')}><Link to="/resources" >Resources</Link></li>
                         </ul>
                     </span> */}
-                </span>
+                {/* </span> */}
             </div>
         )
     }
