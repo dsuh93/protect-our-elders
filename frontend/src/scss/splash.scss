@@ -1,5 +1,32 @@
 // Splash page styling
 
+// keyframes
+@keyframes Up{
+    0%{
+        transform: translateX(100%);
+    }
+
+    100%{
+        transform: translateX(0%);
+    }
+
+}
+
+@keyframes Fade_In{
+    0%{
+        opacity: 0;
+    }
+
+    40%{
+        opacity: 0;
+    }
+    
+    100%{
+        opacity: 100%;
+    }
+} 
+
+// logo
 #poelogo{
     height:100%;
     width: 100%;
@@ -19,8 +46,12 @@
     color: $logo-blue;
     font-size: 125px;
     font-family: 'Farro', sans-serif;
+    line-height: 1.2;
+    animation: Up 1.5s ;
 }
 
+
+// Splash buttons
 .splash-buttons-container{
     display:flex;
     justify-content: center;
