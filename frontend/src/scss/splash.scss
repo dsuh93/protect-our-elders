@@ -39,6 +39,7 @@
     
     margin-right: 50px;
     height:250px;
+    -webkit-animation: FadeIn 4s;
     animation: FadeIn 4s;
 }
 
@@ -47,6 +48,7 @@
     font-size: 125px;
     font-family: 'Farro', sans-serif;
     line-height: 1.2;
+    -webkit-animation: Up 1.5s;
     animation: Up 1.5s;
 }
 
