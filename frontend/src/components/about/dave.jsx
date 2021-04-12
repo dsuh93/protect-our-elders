@@ -2,10 +2,10 @@ function dave  (props) {
     const data = {
         name: "Dave Suh",
         title: "Software Engineer",
-        website: "",
-        linkedin: "www.linkedin.com/in/david-i-suh",
+        website: "https://dsuh93.github.io/portfolio/",
+        linkedin: "https://www.linkedin.com/in/david-i-suh",
         github: "https://github.com/dsuh93",
-        angellist: ""
+        angellist: "https://angel.co/u/david-i-suh"
       };
   
     return (
@@ -20,22 +20,22 @@ function dave  (props) {
           <h3>{data.title}</h3>
           <ul>
             <li>
-              <a href={data.website}>
+              <a href={data.website} target="_blank" rel="noopener noreferrer">
                 <i class=" fa fa-coffee" aria-hidden="true" />
               </a>
             </li>
             <li>
-              <a href={data.linkedin}>
+              <a href={data.linkedin} target="_blank" rel="noopener noreferrer">
                 <i class=" fa fa-linkedin" aria-hidden="true" />
               </a>
             </li>
             <li>
-              <a href={data.github}>
+              <a href={data.github} target="_blank" rel="noopener noreferrer">
                 <i class=" fa fa-github" aria-hidden="true" />
               </a>
             </li>
             <li>
-              <a href={data.angellist}>
+              <a href={data.angellist} target="_blank" rel="noopener noreferrer">
                 <i class=" fa fa-angellist" aria-hidden="true" />
               </a>
             </li>
