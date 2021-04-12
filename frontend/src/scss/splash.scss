@@ -17,10 +17,6 @@
         opacity: 0;
     }
 
-    40%{
-        opacity: 0;
-    }
-    
     100%{
         opacity: 100%;
     }
@@ -39,8 +35,8 @@
     
     margin-right: 50px;
     height:250px;
-    -webkit-animation: FadeIn 4s;
-    animation: FadeIn 4s;
+    -webkit-animation: FadeIn 2s;
+    animation: FadeIn 2s;
 }
 
 #logo-text{
