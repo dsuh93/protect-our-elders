@@ -13,17 +13,25 @@ class Admin extends React.Component {
 
     return (
       <>
-        <h1>Admin Page</h1>
-        <h6>Admins can use this page to access data on volunteers and community members who made requests.</h6>
+        <header className="admin header">
+          <h1 >Admin Dashboard</h1>
+          <h6>Admins can use this page to access data on volunteers and community members who made requests.</h6>
+        </header>
         <br/>
-        <div>
+        <div className="admin details">
           <details className="admin volunteer-details">
-            <summary>Volunteers</summary>
+            <summary>Volunteer Links</summary>
             <p>This section is dedicated to showing availability for volunteers.</p>
+            <a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/forms/d/16OVaMO13jzIIRy4ujCNsM-6xZUj8CNv9jCJWC72J9fo/edit?usp=sharing">Volunteer Google Form Access</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/spreadsheets/d/1TZRyWaXMZMJ-ebZsr6niFVJoNfK-h9QgTobCbPV_Bbc/edit?usp=sharing">Volunteer Google Sheets Access</a>
           </details>
           <details className="admin request-details">
-            <summary>Requests</summary>
+            <summary>Request Links</summary>
             <p>This section is dedicated to showing community member's requests for chaperones.</p>
+
+            <a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/forms/d/1b-R4tvuUAVNaL5uLsq6UNjl_nuynJ_z5xVSYepHiv9E/edit?usp=sharing">Request Google Form Access</a>
+            
+            <a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/spreadsheets/d/1TZRyWaXMZMJ-ebZsr6niFVJoNfK-h9QgTobCbPV_Bbc/edit?usp=sharing">Request Google Sheets Access</a>
           </details>
         </div>
       {/* have page split with top half split left and right calendars, bottom section should be platform to contact both elder and volunteer matched with each other */}

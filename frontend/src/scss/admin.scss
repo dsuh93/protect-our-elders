@@ -1,0 +1,47 @@
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h6 {
+  color: $logo-blue;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.admin.details {
+  width: 100%;
+  height: 50%;
+
+  details {
+    width: 50%;
+    height: 100%;
+  }
+
+  summary {
+    font-size: 25px;
+  }
+
+  .volunteer-details, .request-details {
+    display: flex;
+    flex-direction: column;
+
+    color: $poe-blue;
+    margin: auto;
+    padding: 50px;
+    p {
+      margin: 15px 0;
+    }
+    a {
+      margin: 10px 0;
+      width: fit-content;
+      border: 1px solid $poe-blue;
+      border-radius: 5px;
+      background-color: $poe-blue;
+      padding: 15px;
+      text-decoration: none;
+      color: white;
+    }
+  }
+  
+}
