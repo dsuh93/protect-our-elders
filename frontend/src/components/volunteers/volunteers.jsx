@@ -9,6 +9,7 @@ const Volunteers = (props) => {
             <h1>General Volunteer Application</h1>
             <p className="strong">All chaperones must fill out this application.</p>
             <span className="form-btn">Click Here</span>
+            {/* <Link className="form-btn" to='/volunteers/signup'>Click Here</Link> */}
             
             <h1>Specific Volunteer Role Application</h1>
             <ul>
@@ -29,6 +30,7 @@ const Volunteers = (props) => {
                 </li>
             </ul>
             <span className="form-btn">Click Here</span>
+            {/* <Link className="form-btn" to='/volunteers/signup'>Click Here</Link> */}
             
             <h1>COVID-19 Test Submission</h1>
             <p>For the safety of our volunteers and the community we are 
@@ -36,10 +38,7 @@ const Volunteers = (props) => {
                 to get tested for COVID-19 and to submit a screenshot/photo of 
                 your results after completing an onboarding session.</p>
             <span className="form-btn">Click Here</span>
-            
-            {/* <Link className="form-link" to='/volunteers/signup'><button className="volunteer-signup-btn">Become a Volunteer</button></Link> */}
-
-            <a className="form-link" href="https://forms.gle/E4rjfxxpRdAJHZUT6" target="_blank" rel="noopener noreferrer"><button className="volunteer-signup-btn">Become a Volunteer</button></a>
+            {/* <Link className="form-btn" to='/volunteers/signup'>Click Here</Link> */}
         </div>
     )
 }

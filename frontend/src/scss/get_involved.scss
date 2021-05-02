@@ -81,6 +81,12 @@
         transition: all 300ms;
     }
 
+    a.form-btn {
+        text-decoration: none;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
     .form-btn:hover {
         background-color: $poe-blue;
         color: white;
