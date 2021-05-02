@@ -45,3 +45,43 @@
     align-items: center;
     flex-direction: column;
 }
+
+.volunteer-cont{
+    display: flex;
+    flex-direction: column;
+    padding: 0 18%;
+
+    h1 {
+        text-transform: uppercase;
+        font-family: 'Fjalla One', sans-serif;
+        font-weight: bolder;
+        font-size: 27px;
+        margin-bottom: 20px;
+        padding-top: 20px;
+        letter-spacing: 1.5px;
+    }
+
+     span{
+        line-height: 1.9;
+    }
+
+    .form-btn{
+        width: 120px;
+        padding:7px;
+        border: solid 1px $poe-blue;
+        text-transform: uppercase;
+        margin-top: 20px;
+        cursor: pointer;
+        color: $poe-blue;
+        font-size: 13px;
+        font-weight: bold;
+        letter-spacing: 1.5px;
+        margin-bottom: 30px;
+        text-align: center;
+    
+    }
+    .strong{
+        font-weight: bold;
+    }
+
+}
