@@ -1,1 +1,31 @@
 // Voluteer page styling
+
+.volunteer-cont {
+    h2 {
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    strong {
+        font-weight: 600;
+    }
+
+    p {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    ul {
+        margin-bottom: 40px;
+
+        li {
+            margin-bottom: 15px;
+            line-height: 20px;
+        }
+    }
+}
