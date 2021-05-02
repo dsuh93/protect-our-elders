@@ -4,6 +4,7 @@ import { Route, Switch } from 'react-router-dom';
 import Navbar from './navbar/navbar';
 import Splash from './splash/splash';
 import About from './about/about';
+import AdminContainer from './admin/admin_container';
 import Protection from './protection/protection';
 import Volunteers from './volunteers/volunteers';
 import VolunteerForm from './forms/volunteer_form';
@@ -23,6 +24,7 @@ const App = () => (
                 <Route exact path="/volunteers/signup" component={VolunteerForm} />
                 <Route exact path="/feedback" component={Feedback} />
                 <AuthRoute exact path="/login" component={Login} />
+                <ProtectedRoute exact path="/admin" component={AdminContainer} />
             </Switch>
 
             
