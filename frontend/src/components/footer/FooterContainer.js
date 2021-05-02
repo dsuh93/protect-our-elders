@@ -3,7 +3,7 @@ import { logout } from '../../actions/session_actions';
 import footer from './footer';
 
 const mapStateToProps = (state) => {
-    debugger
+    // debugger
   return {
     isloggedIn: state.session.isAuthenticated
   };
