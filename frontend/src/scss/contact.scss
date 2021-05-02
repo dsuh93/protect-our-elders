@@ -1,0 +1,94 @@
+.contact-page-container{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.contact-page-header{
+    color: $logo-blue;
+    font-size:38px;
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 3px;
+    line-height: 1.2;
+
+    margin-bottom: 16px;
+
+}
+
+.contact-page-subheader{
+    color: $logo-blue;
+    font-size: 14px;
+    font-family: 'Farro', sans-serif;
+    line-height: 1.2;
+}
+
+.contact-page-messsage-form{
+    margin-top:23px;
+}
+
+.contact-form-first-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contact-page-text-field{
+    margin-top:16px;
+    display:flex;
+    flex-direction: column;
+
+}
+
+// .fields{
+//     display:flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+
+// }
+
+.contact-page-submit-btn{
+    font-family:'Helvetica Neue', sans-serif;
+    font-weight:500;
+    color:white;
+    font-size: 17px;
+    margin:16px;
+    height:2vh;
+    width:auto;
+    padding:22px;
+    margin-left: -1px;
+
+    border-radius:40px; 
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $logo-blue;
+
+    outline:none;
+    border:0px;
+    text-decoration: none;
+}
+
+.contact-page-submit-btn:hover{
+    cursor:pointer;
+    color:$logo-blue;
+    background-color: white;
+}
+
+.contact-page-field{
+    display: inline-block;
+}
+
+.contact-page-input {
+    width:100%;
+
+}
+
+.contact-email-element{
+    color: $logo-blue;
+    font-size:38px;
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 3px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
