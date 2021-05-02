@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 
 const Volunteers = (props) => {
 
@@ -30,7 +31,9 @@ const Volunteers = (props) => {
                     <span><strong>Admin:</strong> There's a lot to be done behind the scenes so reach out with your skillset and ideas on how you can apply them with us.</span>
                 </li>
             </ul>
-            <a className="form-link"><button className="volunteer-signup-btn">Become a Volunteer</button></a>
+            {/* <Link className="form-link" to='/volunteers/signup'><button className="volunteer-signup-btn">Become a Volunteer</button></Link> */}
+
+            <a className="form-link" href="https://forms.gle/E4rjfxxpRdAJHZUT6" target="_blank" rel="noopener noreferrer"><button className="volunteer-signup-btn">Become a Volunteer</button></a>
         </div>
     )
 }
