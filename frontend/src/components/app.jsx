@@ -6,6 +6,7 @@ import Splash from './splash/splash';
 import About from './about/about';
 import Protection from './protection/protection';
 import Volunteers from './volunteers/volunteers';
+import VolunteerForm from './forms/volunteer_form';
 import Feedback from './feedback/feedback';
 import Footer from './footer/FooterContainer';
 import Login from './session/LoginContainer';
@@ -19,6 +20,7 @@ const App = () => (
                 <Route exact path="/about" component={About} />
                 <Route exact path="/protection" component={Protection} />
                 <Route exact path="/volunteers" component={Volunteers} />
+                <Route exact path="/volunteers/signup" component={VolunteerForm} />
                 <Route exact path="/feedback" component={Feedback} />
                 <AuthRoute exact path="/login" component={Login} />
             </Switch>

@@ -7,7 +7,7 @@ class Footer extends React.Component{
     }
 
     render(){
-    debugger
+    // debugger
     const languages = ['English', 'Spanish', 'Simplified Chinese', 'Traditional Chinese', 'Korean', 'Japanese', 'Tagalog', 'Vietnamese'];
     return (
         <section className="footer-container">
