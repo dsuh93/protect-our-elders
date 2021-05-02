@@ -19,7 +19,7 @@ const Volunteers = (props) => {
                     <span className='strong'>Community Outreach:</span> Communities are stronger when we work together. Reach out to local business' and help build out a network our seniors can rely on.
                 </li>
                 <li>
-                        <span className='strong'>Copywriting (remote):</span> We're just getting started, and we need help keeping the community updated on what's going on.
+                    <span className='strong'>Copywriting (remote):</span> We're just getting started, and we need help keeping the community updated on what's going on.
                 </li>
                 <li>
                     <span className='strong'>Social Media (remote):</span> Help spread the word and think through new avenues to reach target communities in need of assistance.
@@ -37,12 +37,6 @@ const Volunteers = (props) => {
                 your results after completing an onboarding session.</p>
             <span className="form-btn">Click Here</span>
             
-            <ul>
-                <li>
-                    <span><strong>Chaperone:</strong> Throw on some sunscreen and your walking shoes. You'll be helping our seniors retain their independance and feel safe out in their neighboorhoods.</span>
-                </li>
-                
-            </ul>
             {/* <Link className="form-link" to='/volunteers/signup'><button className="volunteer-signup-btn">Become a Volunteer</button></Link> */}
 
             <a className="form-link" href="https://forms.gle/E4rjfxxpRdAJHZUT6" target="_blank" rel="noopener noreferrer"><button className="volunteer-signup-btn">Become a Volunteer</button></a>
