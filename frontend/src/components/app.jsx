@@ -11,6 +11,7 @@ import VolunteerForm from './forms/volunteer_form';
 import Feedback from './feedback/feedback';
 import Footer from './footer/FooterContainer';
 import Login from './session/LoginContainer';
+import Contact from './contact/Contact';
 
 const App = () => (
     <div id="outer-div">
@@ -23,6 +24,7 @@ const App = () => (
                 <Route exact path="/volunteers" component={Volunteers} />
                 <Route exact path="/volunteers/signup" component={VolunteerForm} />
                 <Route exact path="/feedback" component={Feedback} />
+                <Route exact path="/contact" component={Contact} />
                 <AuthRoute exact path="/login" component={Login} />
                 <ProtectedRoute exact path="/admin" component={AdminContainer} />
             </Switch>
