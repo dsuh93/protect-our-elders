@@ -1,6 +1,7 @@
 import { connect } from 'react-redux';
 import { logout } from '../../actions/session_actions';
 import footer from './footer';
+import { selectLanguage } from '../../actions/language_actions';
 
 const mapStateToProps = (state) => {
     // debugger
@@ -11,7 +12,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    logout: () => dispatch(logout())
+    logout: () => dispatch(logout()),
+    selectLanguage: (language) => dispatch(selectLanguage(language))
   }
 }
 

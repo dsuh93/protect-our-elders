@@ -4,6 +4,14 @@ import {Link} from 'react-router-dom';
 class Footer extends React.Component{
     constructor(props){
         super(props);
+
+        this.handleSetLanguage = this.handleSetLanguage.bind(this);
+    }
+
+
+
+    handleSetLanguage (language) {
+
     }
 
     render(){
@@ -22,7 +30,7 @@ class Footer extends React.Component{
                     }
                     <div className="dropup">
                         <ul className="lang-popup">
-                            {languages.map(lang => <li>{lang}</li>)}
+                            {languages.map(lang => <li onClick={e=>this.handleSetLanguage(e.target.value)}>{lang}</li>)}
                         </ul>
                         <i className="fas fa-language"></i>
                     </div>
