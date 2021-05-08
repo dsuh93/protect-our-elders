@@ -9,7 +9,7 @@ import AdminContainer from "./admin/admin_container";
 import Protection from "./protection/ProtectionContainer";
 import Volunteers from './volunteers/VolunteerContainer';
 import VolunteerForm from "./forms/volunteer_form";
-import Feedback from "./feedback/feedback";
+import Feedback from "./feedback/FeedbackContainer";
 import Footer from "./footer/FooterContainer";
 import Login from "./session/LoginContainer";
 import Contact from "./contact/ContactContainer";
