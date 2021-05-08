@@ -1,16 +1,17 @@
 import React from 'react';
+import languages from '../../util/language_util';
 
 const Feedback = ({language}) => {
 
 
     return (
         <div className="get-involved-cont">
-            <h1>Feedback</h1>
-            <span>We're still growing! If you are a volunteer or a community member who has used our service, we would love to hear your thoughts and feedback on what we are doing well, and how we can improve our service.</span>
-                <span className="form-btn">Click Here</span>
-            <h1>Incident Report</h1>
-                <span>If you are a volunteer who has experienced or witnessed something disturbing during your shift, please file an incident report below.</span>
-                <span className="form-btn">Click Here</span>
+            <h1>{languages[`${language}`].feedback}</h1>
+            <span>{languages[`${language}`].stillGrowing}</span>
+            <span className="form-btn">{languages[`${language}`].clickHere}</span>
+            <h1>{languages[`${language}`].incidentReport}</h1>
+            <span>{languages[`${language}`].somethingDisturbing}</span>
+            <span className="form-btn">{languages[`${language}`].clickHere}</span>
         </div>
     )
 }
