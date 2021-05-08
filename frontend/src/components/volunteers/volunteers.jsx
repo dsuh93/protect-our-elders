@@ -1,43 +1,41 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
+import languages from '../../util/language_util';
 
-const Volunteers = (props) => {
+const Volunteers = ({language}) => {
 
-
+    debugger
     return (
         <div className="volunteer-cont">
-            <h1>General Volunteer Application</h1>
-            <p className="strong">All chaperones must fill out this application.</p>
-            <span className="form-btn">Click Here</span>
+            <h1>{languages[`${language}`].generalVol}</h1>
+            <p className="strong">{languages[`${language}`].allChap}</p>
+            <span className="form-btn">{languages[`${language}`].clickHere}</span>
             {/* <Link className="form-btn" to='/volunteers/signup'>Click Here</Link> */}
             
-            <h1>Specific Volunteer Role Application</h1>
+            <h1>{languages[`${language}`].specificVol}</h1>
             <ul>
                 <li>
-                    <span className='strong'>Volunteer Dispatch (remote):</span> If organization is your thing, we would love your help matching volunteer's schedules with seniors requesting a chaperone. Must be fluent in Cantonese, Mandarin, or Vietnamese.
+                    <span className='strong'>{languages[`${language}`].volDisp}</span> {languages[`${language}`].dispDesc}
                 </li>
                 <li>
-                    <span className='strong'>Community Outreach:</span> Communities are stronger when we work together. Reach out to local business' and help build out a network our seniors can rely on.
+                    <span className='strong'>{languages[`${language}`].comOutreach}</span> {languages[`${language}`].comDesc}
                 </li>
                 <li>
-                    <span className='strong'>Copywriting (remote):</span> We're just getting started, and we need help keeping the community updated on what's going on.
+                    <span className='strong'>{languages[`${language}`].copywriting}</span> {languages[`${language}`].copywritingDesc}
                 </li>
                 <li>
-                    <span className='strong'>Social Media (remote):</span> Help spread the word and think through new avenues to reach target communities in need of assistance.
+                    <span className='strong'>{languages[`${language}`].social}</span> {languages[`${language}`].socialDesc}
                 </li>
                 <li>
-                    <span className='strong'>Admin:</span> There's a lot to be done behind the scenes so reach out with your skillset and ideas on how you can apply them with us.
+                    <span className='strong'>{languages[`${language}`].admin}</span> {languages[`${language}`].adminDesc}
                 </li>
             </ul>
-            <span className="form-btn">Click Here</span>
+            <span className="form-btn">{languages[`${language}`].clickHere}</span>
             {/* <Link className="form-btn" to='/volunteers/signup'>Click Here</Link> */}
             
-            <h1>COVID-19 Test Submission</h1>
-            <p>For the safety of our volunteers and the community we are 
-                serving, we are asking that ALL volunteers doing in-person work 
-                to get tested for COVID-19 and to submit a screenshot/photo of 
-                your results after completing an onboarding session.</p>
-            <span className="form-btn">Click Here</span>
+            <h1>{languages[`${language}`].covidSub}</h1>
+            <p>{languages[`${language}`].covidDesc}</p>
+            <span className="form-btn">{languages[`${language}`].clickHere}</span>
             {/* <Link className="form-btn" to='/volunteers/signup'>Click Here</Link> */}
         </div>
     )

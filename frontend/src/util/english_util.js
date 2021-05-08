@@ -26,6 +26,23 @@ const english = {
     email: 'Email',
     message: 'Message',
     sendMessage: 'Send Message',
+    generalVol: 'General Volunteer Application',
+    allChap: 'All chaperones must fill out this application.',
+    clickHere: 'Click Here',
+    specificVol: 'Specific Volunteer Role Application',
+    volDisp: 'Volunteer Dispatch (remote):',
+    dispDesc: `If organization is your thing, we would love your help matching volunteer's schedules with seniors requesting a chaperone.Must be fluent in Cantonese, Mandarin, or Vietnamese.`,
+    comOutreach: 'Community Outreach:',
+    comDesc: `Communities are stronger when we work together. Reach out to local business' and help build out a network our seniors can rely on.`,
+    copywriting:'Copywriting (remote):',
+    copywritingDesc: `We're just getting started, and we need help keeping the community updated on what's going on.`,
+    social: 'Social Media (remote):',
+    socialDesc: `Help spread the word and think through new avenues to reach target communities in need of assistance.`,
+    admin: 'Admin:',
+    adminDesc: `There's a lot to be done behind the scenes so reach out with your skillset and ideas on how you can apply them with us.`,
+    covidSub: `COVID-19 Test Submission`,
+    covidDesc: `For the safety of our volunteers and the community we are serving, we are asking that ALL volunteers doing in-person work to get tested for COVID-19 and to submit a screenshot/photo of your results after completing an onboarding session.`,
+
 }
 
 export default english
