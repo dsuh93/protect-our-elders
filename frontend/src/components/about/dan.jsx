@@ -1,7 +1,10 @@
-function dan(props){
+import languages from "../../util/language_util"; 
+
+function dan({currentLanguage}){
+  const languageFilter = languages[currentLanguage]
     const data = {
         name: "Daniel Ahn",
-        title: "Software Engineer",
+        title: languageFilter.softwareEngineer,
         website: "https://iamdanahn.github.io/",
         linkedin: "https://www.linkedin.com/in/iamdanahn/",
         github: "https://github.com/iamdanahn/",

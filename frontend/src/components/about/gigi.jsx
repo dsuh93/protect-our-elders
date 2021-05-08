@@ -1,7 +1,10 @@
-function gigi (props){
+import languages from "../../util/language_util"; 
+
+function gigi ({currentLanguage}){
+  const languageFilter = languages[currentLanguage]
     const data = {
       name: "Gigi Scarborough",
-      title: "Software Engineer",
+      title: languageFilter.softwareEngineer,
       website: "https://gigiscarborough.com/",
       linkedin: "https://www.linkedin.com/in/gigimscarborough/",
       github: "https://github.com/gigimscarborough",

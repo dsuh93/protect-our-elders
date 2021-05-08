@@ -1,7 +1,10 @@
-function kai (props) {
+import languages from "../../util/language_util"; 
+    
+function kai ({currentLanguage}) {
+  const languageFilter = languages[currentLanguage]
     const data = {
         name: "Kai Zhu",
-        title: "Software Engineer",
+        title: languageFilter.softwareEngineer,
         website: "https://kaizhu94.github.io/",
         linkedin: "https://www.linkedin.com/in/kaihua-zhu-177a041b1/",
         github: "https://github.com/kaizhu94",

@@ -1,7 +1,10 @@
-function bert(props) {
+import languages from "../../util/language_util"; 
+
+function bert({currentLanguage}) {
+  const languageFilter = languages[currentLanguage]
     const data = {
         name: "Bert Hill",
-        title: "Software Engineer",
+        title: languageFilter.softwareEngineer,
         website: "http://www.berthilldev.com/",
         linkedin: "https://www.linkedin.com/in/bert-hill-0324b120/",
         github: "https://github.com/berthornhill",

@@ -1,41 +1,53 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
-import languages from '../../util/language_util';
+import React from "react";
+import { Link } from "react-router-dom";
+import languages from "../../util/language_util";
 
-class Footer extends React.Component{
-    constructor(props){
-        super(props);
-    }
+class Footer extends React.Component {
+//   constructor(props) {
+//     super(props);
+//   }
 
-
-    render(){
-    debugger
-    const dropdownLanguages = ['English', 'Spanish', 'Simplified Chinese', 'Traditional Chinese', 'Korean', 'Japanese', 'Tagalog', 'Vietnamese'];
+  render() {
+    const dropdownLanguages = [
+      "English",
+      "Spanish",
+      "Simplified Chinese",
+      "Traditional Chinese",
+      "Korean",
+      "Japanese",
+      "Tagalog",
+      "Vietnamese",
+    ];
     return (
-        <section className="footer-container">
-            <footer>
-                <div className="footer-links">
-                    {
-                        this.props.isloggedIn ? (
-                            <button onClick={() => this.props.logout()}>Log Out</button>
-                        ):(
-                                <Link to='/login'>{languages[`${this.props.language}`].adminLogin}</Link>
-                        )
-                    }
-                    <div className="dropup">
-                        <ul className="lang-popup">
-                            {dropdownLanguages.map(lang => <li onClick={() => this.props.selectLanguage(lang)}>{lang}</li>)}
-                        </ul>
-                        <i className="fas fa-language"></i>
-                    </div>
-                </div>
-                <p id="footer-copyright">
-                    {languages[`${this.props.language}`].copyright} &copy; 2021 {languages[`${this.props.language}`].protectOurElders}
-                </p>
-            </footer>
-        </section>
-    )
-    }
+      <section className="footer-container">
+        <footer>
+          <div className="footer-links">
+            {this.props.isloggedIn ? (
+              <button onClick={() => this.props.logout()}>Log Out</button>
+            ) : (
+              <Link to="/login">
+                {languages[`${this.props.language}`].adminLogin}
+              </Link>
+            )}
+            <div className="dropup">
+              <ul className="lang-popup">
+                {dropdownLanguages.map((lang) => (
+                  <li onClick={() => this.props.selectLanguage(lang)}>
+                    {lang}
+                  </li>
+                ))}
+              </ul>
+              <i className="fas fa-language"></i>
+            </div>
+          </div>
+          <p id="footer-copyright">
+            {languages[`${this.props.language}`].copyright} &copy; 2021{" "}
+            {languages[`${this.props.language}`].protectOurElders}
+          </p>
+        </footer>
+      </section>
+    );
+  }
 }
 
 export default Footer;
