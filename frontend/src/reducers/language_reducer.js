@@ -1,7 +1,11 @@
 import { SELECT_LANGUAGE } from "../actions/language_actions";
 
-const LanguageReducer = (state = {}, action) => {
-  Object.freeze(state);
+// const _defaultSession = {
+//   language: 'English'
+// };
+
+const LanguageReducer = (state = 'English', action) => {
+  // Object.freeze(state);
 
   switch (action.type) {
     case SELECT_LANGUAGE:

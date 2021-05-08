@@ -6,7 +6,8 @@ import { selectLanguage } from '../../actions/language_actions';
 const mapStateToProps = (state) => {
     // debugger
   return {
-    isloggedIn: state.session.isAuthenticated
+    isloggedIn: state.session.isAuthenticated,
+    language: state.ui.language
   };
 };
 

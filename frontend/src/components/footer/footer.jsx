@@ -1,22 +1,16 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import languages from '../../util/language_util';
 
 class Footer extends React.Component{
     constructor(props){
         super(props);
-
-        this.handleSetLanguage = this.handleSetLanguage.bind(this);
     }
 
-
-
-    handleSetLanguage (language) {
-
-    }
 
     render(){
-    // debugger
-    const languages = ['English', 'Spanish', 'Simplified Chinese', 'Traditional Chinese', 'Korean', 'Japanese', 'Tagalog', 'Vietnamese'];
+    debugger
+    const dropdownLanguages = ['English', 'Spanish', 'Simplified Chinese', 'Traditional Chinese', 'Korean', 'Japanese', 'Tagalog', 'Vietnamese'];
     return (
         <section className="footer-container">
             <footer>
@@ -25,18 +19,18 @@ class Footer extends React.Component{
                         this.props.isloggedIn ? (
                             <button onClick={() => this.props.logout()}>Log Out</button>
                         ):(
-                            <Link to='/login'>Admin Login</Link>
+                                <Link to='/login'>{languages[`${this.props.language}`].adminLogin}</Link>
                         )
                     }
                     <div className="dropup">
                         <ul className="lang-popup">
-                            {languages.map(lang => <li onClick={e=>this.handleSetLanguage(e.target.value)}>{lang}</li>)}
+                            {dropdownLanguages.map(lang => <li onClick={() => this.props.selectLanguage(lang)}>{lang}</li>)}
                         </ul>
                         <i className="fas fa-language"></i>
                     </div>
                 </div>
                 <p id="footer-copyright">
-                    Copyright &copy; 2021 Protect Our Elders
+                    {languages[`${this.props.language}`].copyright} &copy; 2021 {languages[`${this.props.language}`].protectOurElders}
                 </p>
             </footer>
         </section>
