@@ -7,7 +7,7 @@ import Splash from "./splash/SplashContainer";
 import About from "./about/about";
 import AdminContainer from "./admin/admin_container";
 import Protection from "./protection/protection";
-import Volunteers from "./volunteers/volunteers";
+import Volunteers from './volunteers/VolunteerContainer';
 import VolunteerForm from "./forms/volunteer_form";
 import Feedback from "./feedback/feedback";
 import Footer from "./footer/FooterContainer";
