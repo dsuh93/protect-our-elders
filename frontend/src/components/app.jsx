@@ -1,8 +1,8 @@
 import React from 'react';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import { Route, Switch } from 'react-router-dom';
-import Navbar from './navbar/navbar';
-import Splash from './splash/splash';
+import Navbar from './navbar/NavbarContainer';
+import Splash from './splash/SplashContainer';
 import About from './about/about';
 import AdminContainer from './admin/admin_container';
 import Protection from './protection/protection';
@@ -11,7 +11,7 @@ import VolunteerForm from './forms/volunteer_form';
 import Feedback from './feedback/feedback';
 import Footer from './footer/FooterContainer';
 import Login from './session/LoginContainer';
-import Contact from './contact/Contact';
+import Contact from './contact/ContactContainer';
 
 const App = () => (
     <div id="outer-div">

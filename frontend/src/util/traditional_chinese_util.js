@@ -1,0 +1,32 @@
+const traditional_chinese = {
+    protect: '守衛',
+    ourElders: '我們的長輩',
+    protectOurElders: '守衛我們的長輩',
+    home: '主頁',
+    aboutUs: '關於我們',
+    getInvolved: '加入',
+    volunteers: '成為義工',
+    piyc: '城市守衛',
+    feedback: '意見反饋',
+    donations: '捐款',
+    donate: '捐款',
+    makeADonation: '完成一次捐款',
+    sponsors: '贊助商',
+    media: '媒體',
+    contactUs: '關於我們',
+    more: '更多',
+    resources: '資源',
+    requestAVolunteer: '申請義工',
+    becomeAVolunteer: '成為義工',
+    adminLogin: '管理員登入',
+    copyright: '版權',
+    getInTouch: '請與我們聯繫',
+    feelFree: '請隨時給我們留言，我們將盡快與您聯繫:',
+    name: '姓名',
+    email: '電子郵箱',
+    message: '信息',
+    sendMessage: '發送消息',
+}
+
+
+export default traditional_chinese;

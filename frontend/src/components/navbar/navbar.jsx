@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
+import languages from '../../util/language_util';
 
 
 class Navbar extends React.Component {
@@ -147,31 +148,32 @@ class Navbar extends React.Component {
     
 
     render(){
+
         return(
             <div id="navbar-main" className={`${this.navBorder()}`}>
-                <Link to="/" className={`nav-link ${this.underline('/')}`}>Home</Link>
+                <Link to="/" className={`nav-link ${this.underline('/')}`}>{languages[`${this.props.language}`].home}</Link>
                 <span>
-                    <span onClick={() => this.dropdown('involved')} className={`nav-link ${this.underline('/feedback')} ${this.underline('/protection')} ${this.underline('/volunteers')}`}>Get Involved <i id="i-caret" className="fas fa-caret-down"></i></span>
+                    <span onClick={() => this.dropdown('involved')} className={`nav-link ${this.underline('/feedback')} ${this.underline('/protection')} ${this.underline('/volunteers')}`}>{languages[`${this.props.language}`].getInvolved}<i id="i-caret" className="fas fa-caret-down"></i></span>
                 <span id="involved" className="nav-dropdown">
                     <ul>
-                            <li onClick={() => this.linkClick('involved')}><Link to="/volunteers">Volunteers</Link></li>
-                            <li onClick={() => this.linkClick('involved')}><Link to="/protection" >Protection in Your City</Link></li>
-                            <li onClick={() => this.linkClick('involved')}><Link to="/feedback" >Feedback</Link></li>
+                            <li onClick={() => this.linkClick('involved')}><Link to="/volunteers">{languages[`${this.props.language}`].volunteers}</Link></li>
+                            <li onClick={() => this.linkClick('involved')}><Link to="/protection" >{languages[`${this.props.language}`].piyc}</Link></li>
+                            <li onClick={() => this.linkClick('involved')}><Link to="/feedback" >{languages[`${this.props.language}`].feedback}</Link></li>
                     </ul>
                 </span>
                 </span>
-                <Link to="/about" className={`nav-link ${this.underline('/about')}`}>About Us</Link>
+                <Link to="/about" className={`nav-link ${this.underline('/about')}`}>{languages[`${this.props.language}`].aboutUs}</Link>
                 <span>
-                    <span onClick={() => this.dropdown('donate')} className={`nav-link ${this.underline('/donate')} ${this.underline('/sponsors')}`} >Donations <i id="d-caret"className="fas fa-caret-down"></i></span>
+                    <span onClick={() => this.dropdown('donate')} className={`nav-link ${this.underline('/donate')} ${this.underline('/sponsors')}`} >{languages[`${this.props.language}`].donations}<i id="d-caret"className="fas fa-caret-down"></i></span>
                     <span id="donate"className="nav-dropdown">
                         <ul>
-                            <li onClick={() => this.linkClick('donate')}><Link to="/donate" >Donate</Link></li>
-                            <li onClick={() => this.linkClick('donate')}><Link to="/sponsors">Sponsors</Link></li>
+                            <li onClick={() => this.linkClick('donate')}><Link to="/donate" >{languages[`${this.props.language}`].donate}</Link></li>
+                            <li onClick={() => this.linkClick('donate')}><Link to="/sponsors">{languages[`${this.props.language}`].sponsors}</Link></li>
                         </ul>
                 </span>
                 </span>
                 {/* <Link to="/media" className={`nav-link ${this.underline('/media')}`}>Media</Link> */}
-                <Link to="/contact" className={`nav-link ${this.underline('/contact')}`}>Contact Us</Link>
+                <Link to="/contact" className={`nav-link ${this.underline('/contact')}`}>{languages[`${this.props.language}`].contactUs}</Link>
                 {/* <span> */}
                     {/* <span onClick={() => this.dropdown('more')} className={`nav-link ${this.underline('/resources')}`}>More <i id="m-caret" className="fas fa-caret-down"></i></span>
                     <span id="more" className="nav-dropdown">
