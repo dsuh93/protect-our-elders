@@ -41,7 +41,6 @@ class LoginForm extends React.Component {
     render() {
         const displayUsernameError = this.props.errors ? (<p className="login-form-error">{this.props.errors.username}</p>) : null;
         const displayPasswordError = this.props.errors ? (<p className="login-form-error">{this.props.errors.password}</p>) : null;
-        // debugger
         return (
             <div className="login-page">
                 <div className="login-form-container">

@@ -1,7 +1,10 @@
-function henry (props){
+import languages from "../../util/language_util"; 
+
+function henry ({currentLanguage}){
+    const languageFilter = languages[currentLanguage]
     const data = {
         name: "Henry Huang",
-        title: "Software Engineer",
+        title: languageFilter.softwareEngineer,
         website: "https://henryzihaohuang.github.io/",
         linkedin: "https://www.linkedin.com/in/zihaohuang/",
         github: "https://github.com/henryzihaohuang",

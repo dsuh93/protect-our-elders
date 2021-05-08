@@ -1,7 +1,10 @@
-function david (props) {
+import languages from "../../util/language_util"; 
+    
+function david ({currentLanguage}) {
+  const languageFilter = languages[currentLanguage]
     const data = {
         name: "David Jhinku",
-        title: "Software Engineer",
+        title: languageFilter.softwareEngineer,
         website: "http://davidjhinku.github.io/" ,
         linkedin: "https://www.linkedin.com/in/davidjhinku/",
         github: "https://github.com/davidjhinku",

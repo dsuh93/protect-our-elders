@@ -3,15 +3,17 @@
     justify-content: space-evenly;
 }
 
+.contact-page-subcontainer{
+    min-width: 30vw;
+}
+
 .contact-page-header{
     color: $logo-blue;
     font-size:38px;
     font-family: 'Quicksand', sans-serif;
     letter-spacing: 3px;
     line-height: 1.2;
-
     margin-bottom: 16px;
-
 }
 
 .contact-page-subheader{
@@ -80,7 +82,7 @@
 }
 
 .contact-page-input {
-    width:100%;
+    width:95%;
 
 }
 

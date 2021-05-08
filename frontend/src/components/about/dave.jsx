@@ -1,7 +1,10 @@
-function dave  (props) {
+import languages from "../../util/language_util"; 
+
+function dave ({currentLanguage}) {
+  const languageFilter = languages[currentLanguage]
     const data = {
         name: "Dave Suh",
-        title: "Software Engineer",
+        title: languageFilter.softwareEngineer,
         website: "https://dsuh93.github.io/portfolio/",
         linkedin: "https://www.linkedin.com/in/david-i-suh",
         github: "https://github.com/dsuh93",
