@@ -6,7 +6,7 @@ import Navbar from "./navbar/NavbarContainer";
 import Splash from "./splash/SplashContainer";
 import About from "./about/about";
 import AdminContainer from "./admin/admin_container";
-import Protection from "./protection/protection";
+import Protection from "./protection/ProtectionContainer";
 import Volunteers from './volunteers/VolunteerContainer';
 import VolunteerForm from "./forms/volunteer_form";
 import Feedback from "./feedback/feedback";

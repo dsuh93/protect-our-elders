@@ -1,17 +1,16 @@
 import React from 'react';
+import languages from '../../util/language_util';
 
-const Protection = (props) => {
 
+const Protection = ({language}) => {
 
+    debugger
     return (
        <div className="get-involved-cont">
-           <h1>Are There Elders That Need Protection In Your Area?</h1>
-            <span>We want to help you keep your community safe! If you are hoping 
-                to expand our efforts and start a new Protection project in your 
-                own area, please fill out the form below and we will get back to 
-                you soon!
+            <h1>{languages[`${language}`].areThereElders}</h1>
+            <span>{languages[`${language}`].wantToHelp}
             </span>
-            <span className="form-btn">Inquire Here</span>
+            <span className="form-btn">{languages[`${language}`].inquire}</span>
        </div>
     )
 }
