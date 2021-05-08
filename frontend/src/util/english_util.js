@@ -45,6 +45,10 @@ const english = {
     softwareEngineer: "Software Engineer",
     aboutUsBio:
       "On October 26, 2020, seven aspiring developers set out on a journey that would change their lives forever. Equipped only with knowledge of how to iterate through an array and a dream, we took our places in App Academy's most illustrious cohort, and forged a path through the unknown, determined to conquer the world of software engineering. We learned, we laughed, we sometimes cried and developed applications to commemorate our pain in the form of memes. Most importantly, we crafted bonds of friendship and camaraderie that would last a lifetime. We collectively were, and still are, greatly affected by the rise of targeted violence against the AAPI community during the pandemic. Violence against anyone, especially the most vulnerable and revered members of our community, irrespective of their race, ethnicity, or other identifying characteristics, is both morally repugnant and reprehensible. With this project, we aim to take a stand and employ our development skills for good. We hope to donate this application to any person or organization with the desire and means to assume responsibility for what we've built. If this is something you might be interested in please do not hesitate to contact us. Until then, spread love not hate.",
+    feedback: 'Feedback',
+    stillGrowing: `We're still growing! If you are a volunteer or a community member who has used our service, we would love to hear your thoughts and feedback on what we are doing well, and how we can improve our service.`,
+    incidentReport: 'Incident Report',
+    somethingDisturbing: 'If you are a volunteer who has experienced or witnessed something disturbing during your shift, please file an incident report below.',
     areThereElders: 'Are There Elders That Need Protection In Your Area?',
     wantToHelp: `We want to help you keep your community safe! If you are hoping 
                 to expand our efforts and start a new Protection project in your 
