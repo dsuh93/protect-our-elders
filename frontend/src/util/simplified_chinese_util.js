@@ -52,5 +52,10 @@ const simplified_chinese = {
     areThereElders: '在您的周围有需要看护的长辈吗？',
     wantToHelp: `我们希望对您社区的安全给与帮助！如果您希望我们扩大我们的工作范围并在您自己的所在地区启动一个新的保护项目，请填写以下表格，我们将尽快与您联系！`,
     inquire: 'I请在此处咨询',
+    interestedSponsor: 'Interested In Becoming a Sponsor?',
+    sponsorInfo: 'We are actively seeking new sponsors and partnerships. Please contact us if you are interested in contributing to our mission!',
+    interestedDonate: 'Donations',
+    donationInfo: 'Unfortunately, we are unable to accept donations at this time. Please check back in the near future, as we are rapidly growing and your generous contributions help us continue our mission.',
+
 };
 export default simplified_chinese;

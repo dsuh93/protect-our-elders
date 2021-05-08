@@ -55,6 +55,10 @@ const korean = {
                 own area, please fill out the form below and we will get back to 
                 you soon!`,
     inquire: 'Inquire Here',
+    interestedSponsor: 'Interested In Becoming a Sponsor?',
+    sponsorInfo: 'We are actively seeking new sponsors and partnerships. Please contact us if you are interested in contributing to our mission!',
+    interestedDonate: 'Donations',
+    donationInfo: 'Unfortunately, we are unable to accept your donations at this time. Please check back in the near future, as we are rapidly growing and your generous contributions help us to continue our mission.'
 };
 
 export default korean;
