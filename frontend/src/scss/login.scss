@@ -3,8 +3,9 @@
 .login-form-container {
   border: 1px solid $poe-blue;
   border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  width: fit-content;
+  box-shadow: 0px 10px 10px 2px rgba(51, 51, 51, 0.1);
+  width: 30%;
+  min-width: 232px;
   padding: 25px;
   display: flex;
   flex-direction: column;
@@ -12,18 +13,18 @@
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-
   font-family:'Helvetica Neue', sans-serif;
   font-weight: bold;
   color: $poe-blue;
 
   h2 {
     font-size: 30px;
-    text-decoration: underline;
   }
 
   .login-form {
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     .input-container {
       display: flex;
@@ -40,9 +41,22 @@
         border: 1px solid $poe-lblue;
         border-radius: 5px;
         padding: 5px 3px;
-
+        outline: none;
         font-size: 15px;
-        
+        font-family:'Helvetica Neue', sans-serif;
+        background:#F8F5F5;
+        padding-left: 8px;
+        font-weight: bold;
+
+        &::placeholder{
+          font-weight: normal;
+          font-family:'Helvetica Neue', sans-serif;
+
+        }
+
+        &:focus{
+          box-shadow: 0px 4px 3px 0px rgba(51, 51, 51, .2);
+        }
       }
 
       .login-form-error {

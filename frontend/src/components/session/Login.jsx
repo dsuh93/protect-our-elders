@@ -44,12 +44,11 @@ class LoginForm extends React.Component {
         return (
             <div className="login-page">
                 <div className="login-form-container">
-                    <h2>Admin Login:</h2>
+                    <h2>Admin Login</h2>
                     <br/>
                     <form onSubmit={this.handleSubmit}>
                         <div className="login-form">
                             <div className="input-container">
-                                <label className="input-label">Username:</label>
                                 <input
                                     className="form-input"
                                     type="text"
@@ -60,7 +59,6 @@ class LoginForm extends React.Component {
                                 {displayUsernameError}
                             </div>
                             <div className="input-container">
-                                <label className="input-label">Password:</label>
                                 <input
                                     className="form-input"
                                     type="password"

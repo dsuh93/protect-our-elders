@@ -51,6 +51,10 @@ const traditional_chinese = {
     areThereElders: '在您的周圍有需要看護的長輩嗎？',
     wantToHelp: `我們希望對您社區的安全給與幫助！如果您希望我們擴大我們的工作範圍並在您自己的所在地區啟動一個新的保護項目，請填寫以下表格，我們將盡快與您聯繫！`,
     inquire: '請在此處諮詢',
+    interestedSponsor: 'Interested In Becoming a Sponsor?',
+    sponsorInfo: 'We are actively seeking new sponsors and partnerships. Please contact us if you are interested in contributing to our mission!',
+    interestedDonate: 'Donations',
+    donationInfo: 'Unfortunately, we are unable to accept donations at this time. Please check back in the near future, as we are rapidly growing and your generous contributions help us continue our mission.',
 }
 
 

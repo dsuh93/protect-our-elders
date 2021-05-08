@@ -9,10 +9,12 @@ import AdminContainer from "./admin/admin_container";
 import Protection from "./protection/ProtectionContainer";
 import Volunteers from './volunteers/VolunteerContainer';
 import VolunteerForm from "./forms/volunteer_form";
-import Feedback from "./feedback/feedback";
+import Feedback from "./feedback/FeedbackContainer";
 import Footer from "./footer/FooterContainer";
 import Login from "./session/LoginContainer";
 import Contact from "./contact/ContactContainer";
+import Sponsors from "./sponsors/sponsors";
+import Donate from "./donate/donate";
 
 const App = () => {
   const currentLanguage = useSelector((state) => state.ui.language);
@@ -33,6 +35,8 @@ const App = () => {
           <Route exact path="/volunteers/signup" component={VolunteerForm} />
           <Route exact path="/feedback" component={Feedback} />
           <Route exact path="/contact" component={Contact} />
+          <Route exact path="/sponsors" component={Sponsors} />
+          <Route exact path="/donate" component={Donate} />
           <AuthRoute exact path="/login" component={Login} />
           <ProtectedRoute exact path="/admin" component={AdminContainer} />
         </Switch>
