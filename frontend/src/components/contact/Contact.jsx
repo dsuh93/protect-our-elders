@@ -43,7 +43,7 @@ function Contact (props) {
             <section>
 			    <ul>
 			    	<li>
-			    		<h3 className="contact-email-element">Email</h3>
+						<h3 className="contact-email-element">{languages[`${props.language}`].email}</h3>
 			    		<a href="mailto:protect.our.elders.contact@gmail.com ">protect.our.elders.contact@gmail.com </a>
 			    	</li>
 			    </ul>
