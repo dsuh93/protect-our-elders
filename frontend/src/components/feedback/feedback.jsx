@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Feedback = (props) => {
+const Feedback = ({language}) => {
 
 
     return (
