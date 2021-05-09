@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import { AuthRoute, ProtectedRoute } from "../util/route_util";
 import { Route, Switch } from "react-router-dom";
@@ -7,7 +7,7 @@ import Splash from "./splash/SplashContainer";
 import About from "./about/about";
 import AdminContainer from "./admin/admin_container";
 import Protection from "./protection/ProtectionContainer";
-import Volunteers from './volunteers/VolunteerContainer';
+import Volunteers from "./volunteers/VolunteerContainer";
 import VolunteerForm from "./forms/volunteer_form";
 import Feedback from "./feedback/FeedbackContainer";
 import Footer from "./footer/FooterContainer";
@@ -28,7 +28,9 @@ const App = () => {
           <Route
             exact
             path="/about"
-            render={(props) => <About {...props} currentLanguage={currentLanguage} />}
+            render={(props) => (
+              <About {...props} currentLanguage={currentLanguage} />
+            )}
           />
           <Route exact path="/protection" component={Protection} />
           <Route exact path="/volunteers" component={Volunteers} />
