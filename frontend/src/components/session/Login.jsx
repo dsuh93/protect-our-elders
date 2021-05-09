@@ -24,8 +24,8 @@ class LoginForm extends React.Component {
             password: this.state.password,
         }
         //  
-        this.props.login(user);
-        this.props.history.push('/admin');
+        this.props.login(user)
+            .then(() => this.props.history.push('/admin'));
     }
 
     guestLoginUpdate(key, value){
