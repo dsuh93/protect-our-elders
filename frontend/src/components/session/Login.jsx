@@ -25,6 +25,7 @@ class LoginForm extends React.Component {
         }
         //  
         this.props.login(user);
+        this.props.history.push('/admin');
     }
 
     guestLoginUpdate(key, value){
