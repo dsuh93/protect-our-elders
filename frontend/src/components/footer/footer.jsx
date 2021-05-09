@@ -2,10 +2,20 @@ import React from "react";
 import { Link } from "react-router-dom";
 import languages from "../../util/language_util";
 
+function storeLanguageInLocalStorage(language) {
+  localStorage.setItem("language", language);
+}
+
 class Footer extends React.Component {
-//   constructor(props) {
-//     super(props);
-//   }
+  constructor(props) {
+    super(props);
+
+    this.handleSetLanguage = this.handleSetLanguage.bind(this);
+  }
+
+  handleSetLanguage = (lang) => {
+    storeLanguageInLocalStorage(lang);
+  };
 
   render() {
     const dropdownLanguages = [
@@ -32,7 +42,12 @@ class Footer extends React.Component {
             <div className="dropup">
               <ul className="lang-popup">
                 {dropdownLanguages.map((lang) => (
-                  <li onClick={() => this.props.selectLanguage(lang)}>
+                  <li
+                    onClick={() => {
+                      this.props.selectLanguage(lang);
+                      storeLanguageInLocalStorage(lang);
+                    }}
+                  >
                     {lang}
                   </li>
                 ))}
